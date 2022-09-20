@@ -13,7 +13,7 @@ jobs:
           ref: master
       - name: Create Pull Request
 
-        uses: testing/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v4
         with:
           commit-message: update master branch
           title: Update master branch
