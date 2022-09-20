@@ -11,11 +11,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: master
-      - name: Reset master branch
-        run: |
-          git fetch origin abc:abc
-          git reset --hard abc
       - name: Create Pull Request
+
         uses: testing/create-pull-request@v4
         with:
           commit-message: update master branch
