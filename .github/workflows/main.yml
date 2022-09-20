@@ -16,7 +16,7 @@ jobs:
           git fetch origin abc:abc
           git reset --hard abc
       - name: Create Pull Request
-        uses: Manvi1411/create-pull-request@v4
+        uses: testing/create-pull-request@v4
         with:
           commit-message: update master branch
           title: Update master branch
